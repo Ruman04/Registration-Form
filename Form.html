@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Student Registration Form</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style>
+      .main-form {
+    width: 60%;
+    margin: 50px auto;
+    padding: 20px 30px;
+    border-radius: 12px;
+    background-color: #ddd;
+}
+
+/* respossive */
+
+@media only screen and (max-width: 600px){
+
+    .main-form {
+         width: 90%;
+    }
+
+}
+    </style>
+  </head>
+
+  <body>
+      
+    <form>
+        <div class="main-form">
+        <h3 style="text-align: center;"> Student Registration Form</h3>
+           <div class="row mb-3">
+            <label for="inputtext" class="col-sm-2 col-form-label">Fast Name <span>:</span></label>
+            <div class="col-sm-10">
+              <input placeholder="Enter your fast name" type="text" class="form-control" id="inputtext">
+            </div>
+            </div>
+
+            <div class="row mb-3">
+              <label for="inputtext" class="col-sm-2 col-form-label">Last Name :</label>
+              <div class="col-sm-10">
+                <input placeholder="Enter your last name" type="text" class="form-control" id="inputtext">
+              </div>
+           </div>
+
+          <div class="row mb-3">
+            <label for="inputEmail3" class="col-sm-2 col-form-label">Email :</label>
+            <div class="col-sm-10">
+              <input placeholder="Enter your email" type="email" class="form-control" id="inputEmail3">
+            </div>
+          </div>
+
+          <div class="row mb-3">
+            <label for="inputEmail3" class="col-sm-2 col-form-label">Phone :</label>
+            <div class="col-sm-10">
+
+              <input type="tel" id="phone" name="phone" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" class="form-control"  required>
+
+            </div>
+          </div>
+
+          <div class="row mb-3">
+            <label for="inputEmail3" class="col-sm-2 col-form-label">Gender :</label>
+            <div class="col-sm-10">
+              <input type="radio" id="html" name="fav_language" value="Male">
+             <label for="html">Male</label>
+             <input type="radio" id="css" name="fav_language" value="Famale">
+             <label for="css">Famale</label>
+            </div>
+          </div>
+
+          <div class="row mb-3">
+            <label for="inputtext" class="col-sm-2 col-form-label">Date Of Birth </label>
+            <div class="col-sm-10">
+              <input class="form-control" type="date" id="date of birth" name="date of birth">
+            </div>
+          </div>
+
+          <div class="row mb-3">
+            <label for="textarea" class="col-sm-2 col-form-label">Address <span>:</span></label>
+            <div class="col-sm-10">
+              <textarea rows="4" cols="50" name="comment" class="form-control" form="usrform"></textarea>
+            </div>
+            </div>
+
+            <div class="row mb-3">
+              <label for="inputtext" class="col-sm-2 col-form-label"> City <span>:</span></label>
+              <div class="col-sm-10">
+                <input placeholder="Enter your city name" type="text" class="form-control" id="inputtext">
+              </div>
+              </div>
+
+              <div class="row mb-3">
+                <label for="inputtext" class="col-sm-2 col-form-label">Area  Pin <span>:</span></label>
+                <div class="col-sm-10">
+                  <input placeholder="Enter your area pin" type="text" class="form-control" id="inputtext">
+                </div>
+                </div>
+
+                <div class="row mb-3">
+                  <label for="inputtext" class="col-sm-2 col-form-label">State <span>:</span></label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" id="inputtext">
+                  </div>
+                </div>
+
+                <div class="row mb-3">
+                  <label for="inputtext" class="col-sm-2 col-form-label">Qualification <span>:</span></label>
+                  <div class="col-sm-10">
+                    <select id="cars" name="carlist" form="carform">
+                      <option value="volvo">Select qualification</option>
+                      <option value="saab">SSC</option>
+                      <option value="opel">Diploma</option>
+                      <option value="audi">BSC</option>
+                    </select>
+                  </div>
+                </div>
+
+
+        
+
+          <div class="row mb-3">
+            <div class="col-form-label col-sm-2 pt-0">Specialization</div>
+            <div class="col-sm-10">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck1">
+                <label class="form-check-label" for="gridCheck1">
+                  Computer Science
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck1">
+                <label class="form-check-label" for="gridCheck1">
+                  Information Technology
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck1">
+                <label class="form-check-label" for="gridCheck1">
+                  computer architecture
+                </label>
+              </div>
+            </div>
+          </div>
+          
+
+          <div class="row mb-3">
+            <label for="inputtext" class="col-sm-2 col-form-label">Password </label>
+            <div class="col-sm-10">
+              <input type="password" id="pwd" name="pwd" class="form-control"  minlength="8">
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+    </form>
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
